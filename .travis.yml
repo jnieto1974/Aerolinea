@@ -1,0 +1,13 @@
+language: ruby
+rvm: 2.3.1
+sudo: false
+
+before_install:
+ - gem install hiptest-publisher
+ - hiptest-publisher -c rspec.conf  --test-run-id=211325 --only=tests
+
+script:
+ - bundle exec rspec --format RspecJunitFormatter -o report.xml
+
+after_script:
+  - hiptest-publisher -c rspec.conf  --push=report.xml --test-run-id=211325
