@@ -1,0 +1,13 @@
+---
+- name: Una solicitud de embarque con animales
+  uid: a6c7c8e4-edd7-4095-a8b3-4c62c6659f7e
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: el numero de animales solicitado es $1
+  uid: c1f9d516-5f91-4ff4-be79-52edebfafbc6
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: la solicitud es aceptada
+  uid: af6db8a0-f2fb-461d-8211-27d4901ac017
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
