@@ -1,15 +1,25 @@
 # encoding: UTF-8
+require_relative '../src/app_aerolinea'
 
 module Actionwords
-  def una_solicitud_de_embarque_con_animales
 
+  def sut
+    @sut ||= Aerolinea.new
   end
 
-  def el_numero_de_animales_solicitado_es_1
+  def una_solicitud_de_embarque_con_animales
+	 sut.embarque_animal_cabina
+  end
 
+  def solicito_embarcar_numero_animales_animales_en_cabina(numero_animales = "")
+   sut.embarcar_animal (numero_animales)
   end
 
   def la_solicitud_es_aceptada
-
+     expect(sut.embarque_aceptado).to be_truthy
+  end
+  
+  def la_operacion_es_rechazada
+     expect(sut.embarque_aceptado).to be_falsey
   end
 end
