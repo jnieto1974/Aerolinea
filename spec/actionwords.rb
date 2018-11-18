@@ -11,7 +11,7 @@ module Actionwords
 	 sut.embarque_animal_cabina
   end
 
-  def solicito_embarcar_numero_animales_animales_en_cabina(numero_animales = "")
+  def solicito_embarcar_numero_animales_animales_en_cabina(numero_animales = 0)
    sut.embarcar_animal (numero_animales)
   end
 
@@ -21,5 +21,9 @@ module Actionwords
   
   def la_operacion_es_rechazada
      expect(sut.embarque_aceptado).to be_falsey
+  end
+  
+   def el_animal_a_cargar_es_animal(animal="")
+      sut.cargar_animal(animal)
   end
 end

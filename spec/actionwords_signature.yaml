@@ -16,3 +16,8 @@
   uid: fb14f203-492c-4e2c-ba5c-6d79b5d76602
   parameters: []
   body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: el animal a cargar es "animal"
+  uid: cf8bc573-1326-42eb-b964-7f40e93349fa
+  parameters:
+  - name: animal
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
