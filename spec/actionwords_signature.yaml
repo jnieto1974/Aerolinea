@@ -12,7 +12,7 @@
   uid: af6db8a0-f2fb-461d-8211-27d4901ac017
   parameters: []
   body_hash: d41d8cd98f00b204e9800998ecf8427e
-- name: la operación es rechazada
+- name: la solicitud es rechazada
   uid: fb14f203-492c-4e2c-ba5c-6d79b5d76602
   parameters: []
   body_hash: d41d8cd98f00b204e9800998ecf8427e

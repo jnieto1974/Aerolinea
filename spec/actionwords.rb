@@ -19,7 +19,7 @@ module Actionwords
      expect(sut.embarque_aceptado).to be_truthy
   end
   
-  def la_operacion_es_rechazada
+  def la_solicitud_es_rechazada
      expect(sut.embarque_aceptado).to be_falsey
   end
   

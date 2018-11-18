@@ -13,8 +13,8 @@ describe 'Solo se permitirá el embarque en cabina a animales autorizados por la
       solicito_embarcar_numero_animales_animales_en_cabina(1)
       # When el animal a cargar es "<animal>"
       el_animal_a_cargar_es_animal(animal)
-      # Then la operación es rechazada
-      la_operacion_es_rechazada
+      # Then la solicitud es rechazada
+      la_solicitud_es_rechazada
     end
 
     it "animal_cacatua (uid:30fd54d6-4708-4a8c-87c5-244e45f18cf7)" do

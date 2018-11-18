@@ -19,7 +19,7 @@ describe 'Embarque en cabina' do
     una_solicitud_de_embarque_con_animales
     # When solicito embarcar "3" animales en cabina
     solicito_embarcar_numero_animales_animales_en_cabina(3)
-    # Then la operación es rechazada
-    la_operacion_es_rechazada
+    # Then la solicitud es rechazada
+    la_solicitud_es_rechazada
   end
 end
