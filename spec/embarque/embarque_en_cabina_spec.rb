@@ -1,8 +1,8 @@
 # encoding: UTF-8
 require 'spec_helper'
-require_relative 'actionwords'
+require_relative '../actionwords'
 
-describe 'Embarque' do
+describe 'Embarque en cabina' do
   include Actionwords
 
   it "Nº máximo animales con los que se puede viajar en cabina es 1 (uid:6f605c61-58b1-4bae-a5da-2a11e6f657f7)" do

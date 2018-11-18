@@ -1,10 +1,9 @@
 class Aerolinea
     attr_reader :app_aerolinea, :started
   
-   
-     
+        
      def initialize
-       @embarque_animal_cabina = false    
+       @embarque_animal = false    
        @embarque_aceptado = false    	
        @animales_cabina=0
        @animales_bodega=0
@@ -12,28 +11,37 @@ class Aerolinea
     end
        
 
-    def embarque_animal_cabina
-      @embarque_animal_cabina = true
+    def embarque_animal
+      @embarque_animal = true
    end       
    
    def embarque_aceptado
       @embarque_aceptado
    end
 
-    def embarcar_animal (num_animales=0)
-       if (@embarque_animal_cabina)
-            if (num_animales > 1) 
-                @embarque_aceptado=false
-            else
-              @animales_bodega=1
-              @embarque_aceptado=true
-            end 
-      else
-            @animales_bodega=num_animales
-            @embarque_aceptado=true 
-      end    
+    def embarcar_animal_en_cabina (num_animales=0)
+       if (@embarque_animal)
+              animales=num_animales +   @animales_cabina
+              if (animales <=1)
+                    @embarque_aceptado=true
+                    @animales_cabina = animales
+              end                
+       else
+              @embarque_aceptado=false    
+       end     
     end   
   
+    def embarcar_animal_en_bodega (num_animales=0)
+       if (@embarque_animal)
+              animales=num_animales +   @animales_bodega
+              if (animales <=3)
+                    @embarque_aceptado=true
+                    @animales_bodega = animales
+              end                
+       else
+              @embarque_aceptado=false
+       end  
+    end    
     def cargar_animal(animal="")
        @embarque_aceptado=false
        @animles_permitidos_cabina.each do |i|
