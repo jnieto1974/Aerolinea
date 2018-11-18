@@ -23,10 +23,14 @@ module Actionwords
      expect(sut.embarque_aceptado).to be_falsey
   end
   
-   def el_animal_a_cargar_es_animal(animal="")
-      sut.cargar_animal(animal)
+   def el_animal_a_cargar_en_cabina_es_animal(animal="")
+      sut.cargar_animal_cabina(animal)
   end
   def solicito_embarcar_numero_animales_animales_en_bodega(numero_animales = 0)
       sut.embarcar_animal_en_bodega(numero_animales)
   end
+  def el_animal_a_carga_en_avion_es_animal(animal = "")
+      sut.cargar_animal_bodega(animal)
+   end
+
 end

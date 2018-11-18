@@ -8,6 +8,7 @@ class Aerolinea
        @animales_cabina=0
        @animales_bodega=0
        @animles_permitidos_cabina = ['Perro','Gato']
+       @animles_permitidos_avion = ['Perro','Gato','Cacatua','Leon']
     end
        
 
@@ -42,7 +43,8 @@ class Aerolinea
               @embarque_aceptado=false
        end  
     end    
-    def cargar_animal(animal="")
+    
+    def cargar_animal_cabina(animal="")
        @embarque_aceptado=false
        @animles_permitidos_cabina.each do |i|
           if (i==animal)
@@ -51,4 +53,12 @@ class Aerolinea
          end  
     end 
   
+   def cargar_animal_bodega(animal="")
+       @embarque_aceptado=false
+       @animles_permitidos_avion.each do |i|
+          if (i==animal)
+               @embarque_aceptado=true
+           end
+         end  
+    end 
 end

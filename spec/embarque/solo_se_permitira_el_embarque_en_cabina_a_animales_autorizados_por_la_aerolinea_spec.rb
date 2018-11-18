@@ -11,8 +11,8 @@ describe 'Solo se permitirá el embarque en cabina a animales autorizados por la
       una_solicitud_de_embarque_con_animales
       # And solicito embarcar "1" animales en cabina
       solicito_embarcar_numero_animales_animales_en_cabina(1)
-      # When el animal a cargar es "<animal>"
-      el_animal_a_cargar_es_animal(animal)
+      # When el animal a cargar en cabina es "<animal>"
+      el_animal_a_cargar_en_cabina_es_animal(animal)
       # Then la solicitud es rechazada
       la_solicitud_es_rechazada
     end
@@ -36,8 +36,8 @@ describe 'Solo se permitirá el embarque en cabina a animales autorizados por la
       una_solicitud_de_embarque_con_animales
       # And solicito embarcar "1" animales en cabina
       solicito_embarcar_numero_animales_animales_en_cabina(1)
-      # When el animal a cargar es "<animal>"
-      el_animal_a_cargar_es_animal(animal)
+      # When el animal a cargar en cabina es "<animal>"
+      el_animal_a_cargar_en_cabina_es_animal(animal)
       # Then la solicitud es aceptada
       la_solicitud_es_aceptada
     end
