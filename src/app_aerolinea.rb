@@ -23,10 +23,13 @@ class Aerolinea
     def embarcar_animal_en_cabina (num_animales=0)
        if (@embarque_animal)
               animales=num_animales +   @animales_cabina
-              if (animales <=2)
+              if (animales <=1)
                     @embarque_aceptado=true
                     @animales_cabina = animales
-              end                
+              else
+                    @embarque_aceptado=false
+              end  
+              
        else
               @embarque_aceptado=false    
        end     
@@ -38,6 +41,8 @@ class Aerolinea
               if (animales <=3)
                     @embarque_aceptado=true
                     @animales_bodega = animales
+              else
+                    @embarque_aceptado=false
               end                
        else
               @embarque_aceptado=false
