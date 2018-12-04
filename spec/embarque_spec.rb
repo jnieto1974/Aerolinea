@@ -25,7 +25,7 @@ describe 'Embarque' do
     solicito_embarcar_numero_animales_animales_en_bodega(2)
     # And solicito embarcar "2" animales en cabina
     solicito_embarcar_numero_animales_animales_en_cabina(2)
-    # Then la solicitud es aceptada
+    # Then la solicitud es rechazada
     la_solicitud_es_rechazada
   end
 end
