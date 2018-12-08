@@ -2,6 +2,9 @@ language: ruby
 cache: bundler
 rvm: 2.3.1
 sudo: false
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 before_install:
  - gem install hiptest-publisher
