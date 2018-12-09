@@ -23,7 +23,7 @@ class Aerolinea
     def embarcar_animal_en_cabina (num_animales=0)
        if (@embarque_animal)
               animales=num_animales +   @animales_cabina
-              if (animales <=1)
+              if (animales <=2)
                     @embarque_aceptado=true
                     @animales_cabina = animales
               else
