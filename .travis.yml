@@ -6,11 +6,16 @@ env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
+addons:
+  sonarcloud:
+    organization: "jnieto1974-github" # the key of the org you chose at step #3
+   
 before_install:
  - gem install hiptest-publisher
  - hiptest-publisher -c rspec.conf  --test-run-id=211325 --only=tests
 
 script:
+ - sonar-scanner
  - bundle exec rspec --format RspecJunitFormatter -o report.xml
 
 after_script:
