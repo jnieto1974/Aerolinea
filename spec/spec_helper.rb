@@ -1,5 +1,5 @@
 # spec/spec_helper.rb
 require 'simplecov'
-require 'simplecov-console'
+require 'simplecov-json'
 SimpleCov.formatter = SimpleCov::Formatter::JSONFormatter
 SimpleCov.start
