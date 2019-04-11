@@ -28,4 +28,12 @@ describe 'Embarque' do
     # Then la solicitud es rechazada
     la_solicitud_es_rechazada
   end
+  it "Nº de animales a embarcar igual a cero" do
+    # Given Una solicitud de embarque con animales
+    una_solicitud_de_embarque_con_animales
+    # When solicito embarcar "0" animales en cabina
+    solicito_embarcar_numero_animales_animales_en_cabina("0")
+    # Then la solicitud es rechazada
+    la_solicitud_es_rechazada
+  end
 end
