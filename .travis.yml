@@ -16,7 +16,7 @@ before_install:
 
 script:
  - bundle exec rspec --format RspecJunitFormatter -o report.xml
- #- sonar-scanner
+ - sonar-scanner
  
 after_script:
   - hiptest-publisher -c rspec.conf  --push=report.xml --test-run-id=211325
