@@ -64,6 +64,7 @@ class Aerolinea
           if (i==animal)
                @embarque_aceptado=true
            end
+           
          end  
     end 
 end
